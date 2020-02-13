@@ -14,7 +14,7 @@ server.get('/', (req, res) => {
     res.status(200).json(songs);
 })
 
-const port = 3001;
+const port = proces.env.PORT || 3001;
 
 server.listen(port, () => {
     console.log(`Server listening on port ${port}`)
